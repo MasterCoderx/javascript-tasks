@@ -29,7 +29,7 @@ function isThisBoolean (x) {
     }
 }
 
-console.log(isThisBoolean('false'))
+console.log(isThisBoolean(false))
 
 // Exercise 4 //
 
@@ -49,3 +49,26 @@ function getCirclesAreaSum (area1, area2) {
 
 const circlesAreaSum = getCirclesAreaSum(5, 10);
 console.log(circlesAreaSum); // 392.69908169872417
+
+// Exercise 6 //
+
+function determineQuarterOfTheYear (month) {
+    if ( 1 <= month <=3  ) {
+        return 'First Quarter';
+    }
+    else if ( 4 <= month <= 6) {
+        return 'Second Quarter';
+    }
+    else if (7 <= month <= 9) {
+        return 'Third Quarter';
+    }
+    else if (10 <= month <= 12) {
+        return 'Fourth Quarter';
+    }
+    else {
+        return 'Please enter the month as an integer number';
+    }
+}
+const quarterOfTheYear = determineQuarterOfTheYear(6);
+
+console.log(quarterOfTheYear)

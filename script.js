@@ -30,3 +30,13 @@ function isThisBoolean (x) {
 }
 
 console.log(isThisBoolean('false'))
+
+// Exercise 4 //
+
+function getCircleArea (area) {
+    return area = Math.pow(radius, 2) * Math.PI;
+}
+
+const radius = 5;
+const area = getCircleArea(radius);
+console.log(area); // 78.53981633974483

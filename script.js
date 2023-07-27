@@ -33,10 +33,19 @@ console.log(isThisBoolean('false'))
 
 // Exercise 4 //
 
-function getCircleArea (area) {
-    return area = Math.pow(radius, 2) * Math.PI;
+function getCircleArea (radius) {
+    return Math.pow(radius, 2) * Math.PI;
 }
 
 const radius = 5;
 const area = getCircleArea(radius);
 console.log(area); // 78.53981633974483
+
+// Exercise 5 //
+
+function getCirclesAreaSum (area1, area2) {
+    return sumArea = getCircleArea(area1) + getCircleArea(area2)
+}
+
+const circlesAreaSum = getCirclesAreaSum(5, 10);
+console.log(circlesAreaSum); // 392.69908169872417

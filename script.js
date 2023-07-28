@@ -85,3 +85,10 @@ function rockPaperScissors(playerOne, playerTwo) {
 rockPaperScissors('rock', 'scissors'); // 1
 rockPaperScissors('rock', 'paper'); // 2
 rockPaperScissors('paper','paper'); // 0
+
+// Exercise 8
+
+const width = 20;
+const height = 20;
+const totalArea = width * height;
+console.log(totalArea)

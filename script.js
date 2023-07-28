@@ -17,16 +17,14 @@ console.log(isThisMyName('Adam'));
 
 // Exercise 3
 
-function isThisBoolean (x) {
-    if (x === true) {
+function isThisBoolean (value) {
+    if (value === true) {
         return true;
     }
-    else if (x === false) {
+    if (value === false) {
         return true;
     }
-    else {
-        return false;
-    }
+    return false;
 }
 
 console.log(isThisBoolean(false));
@@ -57,3 +55,33 @@ function determineQuarterOfTheYear (month) {
 }
 
 console.log(determineQuarterOfTheYear(6));
+
+// Exercise 7
+
+function rockPaperScissors(playerOne, playerTwo) {
+    if (playerOne === playerTwo) {
+        return 0;
+    }
+    if (playerOne === 'rock') {
+        if (playerTwo === 'scissors') {
+            return 1;
+        }
+        return 2;
+    }
+    if (playerOne === 'scissors') {
+        if (playerTwo === 'rock') {
+            return 2;
+        }
+        return 1;
+    }
+    if (playerOne === 'paper') {
+        if (playerTwo === 'rock') {
+            return 1;
+        }
+        return 2;
+    }
+}
+
+rockPaperScissors('rock', 'scissors'); // 1
+rockPaperScissors('rock', 'paper'); // 2
+rockPaperScissors('paper','paper'); // 0

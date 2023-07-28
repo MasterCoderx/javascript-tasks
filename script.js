@@ -1,4 +1,4 @@
-//  Exercise 1 //
+//  Exercise 1
 
 const greeting = getGreeting('John', 'Smith');
 function getGreeting(firstName, secondName) {
@@ -6,7 +6,7 @@ function getGreeting(firstName, secondName) {
 }
 console.log(greeting); // Hi, “John Smith”. What's up?
 
-// Exercise 2 //
+// Exercise 2
 
 function isThisMyName(yourName) {
     return yourName === 'Janek';
@@ -15,23 +15,23 @@ function isThisMyName(yourName) {
 console.log(isThisMyName('Janek'));
 console.log(isThisMyName('Adam'));
 
-// Exercise 3 //
+// Exercise 3
 
 function isThisBoolean (x) {
     if (x === true) {
-        return true
+        return true;
     }
     else if (x === false) {
-        return true
+        return true;
     }
     else {
-        return false
+        return false;
     }
 }
 
-console.log(isThisBoolean(false))
+console.log(isThisBoolean(false));
 
-// Exercise 4 //
+// Exercise 4
 
 function getCircleArea (radius) {
     return Math.pow(radius, 2) * Math.PI;
@@ -41,34 +41,19 @@ const radius = 5;
 const area = getCircleArea(radius);
 console.log(area); // 78.53981633974483
 
-// Exercise 5 //
+// Exercise 5
 
 function getCirclesAreaSum (area1, area2) {
-    return sumArea = getCircleArea(area1) + getCircleArea(area2)
+    return getCircleArea(area1) + getCircleArea(area2);
 }
 
 const circlesAreaSum = getCirclesAreaSum(5, 10);
 console.log(circlesAreaSum); // 392.69908169872417
 
-// Exercise 6 //
+// Exercise 6
 
 function determineQuarterOfTheYear (month) {
-    if ( 1 <= month <=3  ) {
-        return 'First Quarter';
-    }
-    else if ( 4 <= month <= 6) {
-        return 'Second Quarter';
-    }
-    else if (7 <= month <= 9) {
-        return 'Third Quarter';
-    }
-    else if (10 <= month <= 12) {
-        return 'Fourth Quarter';
-    }
-    else {
-        return 'Please enter the month as an integer number';
-    }
+    return Math.ceil(month / 3);
 }
-const quarterOfTheYear = determineQuarterOfTheYear(6);
 
-console.log(quarterOfTheYear)
+console.log(determineQuarterOfTheYear(6));

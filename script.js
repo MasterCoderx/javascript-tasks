@@ -102,6 +102,18 @@ let secondNumber = 2;
 console.log(secondNumber)
 console.log((firstNumber))
 
+// Exercise 10
 
+const physics = 4;
+const math = 4;
+const english = 5;
+let averageGrade = (physics + math + english) / 3
 
-
+function compareAverageGrade (physics, math, english) {
+    if (averageGrade >= 4) {
+        return 'Good Job!'
+    }
+    else
+        return 'Try Harder!'
+}
+console.log(compareAverageGrade(physics,math,english))

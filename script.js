@@ -117,3 +117,12 @@ function compareAverageGrade (physics, math, english) {
         return 'Try Harder!'
 }
 console.log(compareAverageGrade(physics,math,english))
+
+// Exercise 11
+
+function convertMinutesToHours(minutes) {
+    return (minutes / 60);
+}
+
+const hours = convertMinutesToHours(75);
+console.log(hours); // 1.25

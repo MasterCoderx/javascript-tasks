@@ -92,3 +92,16 @@ const width = 20;
 const height = 20;
 const totalArea = width * height;
 console.log(totalArea)
+
+// Exercise 9
+
+let firstNumber = 1;
+let secondNumber = 2;
+
+[firstNumber,secondNumber] = [secondNumber, firstNumber];
+console.log(secondNumber)
+console.log((firstNumber))
+
+
+
+

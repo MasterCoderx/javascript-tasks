@@ -135,3 +135,20 @@ function isTextUppercase(reviewedText) {
 
 console.log(isTextUppercase('Hello')); // false
 console.log(isTextUppercase('HELLO')); // true
+
+// Exercise 13
+
+const n = 3;
+const x = 1;
+const y = 3;
+
+function checkIfDivisible(x,y,n) {
+    if (n % x === 0) {
+        if (n % y ===0) {
+            return true;
+        }
+            return false;
+    }
+}
+
+console.log(checkIfDivisible(x,y,n))

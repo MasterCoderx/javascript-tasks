@@ -167,3 +167,8 @@ console.log(getBillboardPrice('Hello world!', 10)); // 120
 console.log(getBillboardPrice('Hello world!', 15)); // 180
 console.log(getBillboardPrice('To be, or not to be', 20)); // 380
 
+// Exercise 15
+
+let integer = 3
+let oppositeInteger = integer * -1;
+console.log(oppositeInteger)

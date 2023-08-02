@@ -110,9 +110,9 @@ console.log(secondNumber);
 const physics = 4;
 const math = 4;
 const english = 5;
-let averageGrade = (physics + math + english) / 3
+let averageGrade = (physics + math + english) / 3;
 
-function compareAverageGrade (physics, math, english) {
+ function compareAverageGrade (physics, math, english) {
     if (averageGrade >= 4) {
         return 'Good Job!'
     }
@@ -121,10 +121,11 @@ function compareAverageGrade (physics, math, english) {
 }
 console.log(compareAverageGrade(physics,math,english))
 
+
 // Exercise 11
 
 function convertMinutesToHours(minutes) {
-    return (minutes / 60);
+    return minutes / 60;
 }
 
 const hours = convertMinutesToHours(75);
@@ -132,8 +133,8 @@ console.log(hours); // 1.25
 
 // Exercise 12
 
-function isTextUppercase(reviewedText) {
-    return reviewedText === reviewedText.toUpperCase();
+function isTextUppercase(text) {
+    return text === text.toUpperCase();
 }
 
 console.log(isTextUppercase('Hello')); // false
@@ -149,11 +150,20 @@ function checkIfDivisible(x,y,n) {
     if (n % x === 0) {
         if (n % y ===0) {
             return true;
-        }
-            return false;
+    }
+    return false;
     }
 }
 
 console.log(checkIfDivisible(x,y,n))
 
 // Exercise 14
+
+function getBillboardPrice(billboardText,billboardPrice ) {
+    return billboardText.length * billboardPrice;
+}
+
+console.log(getBillboardPrice('Hello world!', 10)); // 120
+console.log(getBillboardPrice('Hello world!', 15)); // 180
+console.log(getBillboardPrice('To be, or not to be', 20)); // 380
+

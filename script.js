@@ -98,9 +98,12 @@ console.log(totalArea)
 let firstNumber = 1;
 let secondNumber = 2;
 
-[firstNumber,secondNumber] = [secondNumber, firstNumber];
-console.log(secondNumber)
-console.log((firstNumber))
+let temp = firstNumber;
+firstNumber= secondNumber;
+secondNumber = temp;
+
+console.log(firstNumber);
+console.log(secondNumber);
 
 // Exercise 10
 
@@ -152,3 +155,5 @@ function checkIfDivisible(x,y,n) {
 }
 
 console.log(checkIfDivisible(x,y,n))
+
+// Exercise 14

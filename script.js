@@ -172,3 +172,17 @@ console.log(getBillboardPrice('To be, or not to be', 20)); // 380
 let integer = 3
 let oppositeInteger = integer * -1;
 console.log(oppositeInteger)
+
+// Exercise 16
+
+function makeNegative(negativeNumber) {
+    if (negativeNumber === negativeNumber * -1) {
+        return negativeNumber;
+    }
+    return negativeNumber * -1;
+}
+
+console.log(makeNegative(1));  // return -1
+console.log(makeNegative(-5)); // return -5
+console.log(makeNegative(0));  // return 0
+

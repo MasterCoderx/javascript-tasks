@@ -186,3 +186,13 @@ console.log(makeNegative(1));  // return -1
 console.log(makeNegative(-5)); // return -5
 console.log(makeNegative(0));  // return 0
 
+// Exercise 17
+
+function removeFirstAndLastString (userInputString) {
+    if (userInputString.length > 2) {
+        return userInputString.slice(1, -1);
+    }
+    return userInputString
+}
+
+console.log(removeFirstAndLastString('Babushka'));

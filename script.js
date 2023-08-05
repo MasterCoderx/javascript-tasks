@@ -98,9 +98,9 @@ console.log(totalArea)
 let firstNumber = 1;
 let secondNumber = 2;
 
-let temp = firstNumber;
+const temporary = firstNumber;
 firstNumber= secondNumber;
-secondNumber = temp;
+secondNumber = temporary;
 
 console.log(firstNumber);
 console.log(secondNumber);
@@ -110,17 +110,17 @@ console.log(secondNumber);
 const physics = 4;
 const math = 4;
 const english = 5;
-let averageGrade = (physics + math + english) / 3;
 
- function compareAverageGrade (physics, math, english) {
+ function compareAverageGrade (firstGrade, secondGrade, thirdGrade) {
+    const averageGrade = (firstGrade + secondGrade + thirdGrade) / 3;
     if (averageGrade >= 4) {
         return 'Good Job!'
     }
-    else
-        return 'Try Harder!'
+    return 'Try Harder!'
 }
-console.log(compareAverageGrade(physics,math,english))
 
+console.log(compareAverageGrade(physics,math,english))
+console.log(compareAverageGrade(5,10,15))
 
 // Exercise 11
 
@@ -146,13 +146,13 @@ const n = 3;
 const x = 1;
 const y = 3;
 
-function checkIfDivisible(x,y,n) {
-    if (n % x === 0) {
-        if (n % y ===0) {
+function checkIfDivisible(firstNumber, secondNumber, numberToDivide) {
+    if (numberToDivide % firstNumber === 0) {
+        if (numberToDivide % secondNumber === 0) {
             return true;
+        }
     }
     return false;
-    }
 }
 
 console.log(checkIfDivisible(x,y,n))
@@ -188,11 +188,52 @@ console.log(makeNegative(0));  // return 0
 
 // Exercise 17
 
-function removeFirstAndLastString (userInputString) {
+function removeFirstAndLastCharacter (userInputString) {
     if (userInputString.length > 2) {
         return userInputString.slice(1, -1);
     }
     return userInputString
 }
 
-console.log(removeFirstAndLastString('Babushka'));
+console.log(removeFirstAndLastCharacter('Babushka'));
+
+// Exercise 18
+
+function calculation(operation, firstNumber, secondNumber) {
+    if (operation === '+') {
+        return firstNumber + secondNumber;
+    }
+    if (operation === '-') {
+        return firstNumber - secondNumber;
+    }
+    if (operation === '*') {
+        return firstNumber * secondNumber;
+    }
+    return firstNumber / secondNumber;
+}
+
+calculation('+',4,7);
+
+// Exercise 19
+
+function getCenturyFromYear(year) {
+    return Math.ceil(year / 100);
+}
+
+// 1705 --> 18
+// 1900 --> 19
+// 1601 --> 17
+// 2000 --> 20
+
+console.log(getCenturyFromYear(1905))
+
+// Exercise 20
+
+function determineOddOrEven(value) {
+    if (value % 2 === 0) {
+        return 'Even';
+    }
+    return 'Odd';
+
+}
+console.log(determineOddOrEven(2));

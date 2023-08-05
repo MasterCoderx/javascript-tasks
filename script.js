@@ -240,10 +240,27 @@ console.log(determineOddOrEven(2));
 
 // Exercise 21
 
-function checkIfPlayingBanjo(name) {
+function areYouPlayingBanjo(name) {
     if (name.startsWith('R') === true || name.startsWith('r') === true) {
         return 'You are playing Banjo!';
     }
     return name + ' are you playing Banjo?';
 }
-console.log(checkIfPlayingBanjo('Sobert'));
+console.log(areYouPlayingBanjo('Sobert'));
+
+// Exercise 22
+
+function checkBmi(weight, height) {
+    if (weight/height**2 <= 18.5) {
+        return 'Underweight';
+    }
+    if (weight/height**2 <= 25.0) {
+        return 'Normal';
+    }
+    if (weight/height**2 <= 30.0) {
+        return 'Overweight';
+    }
+    return 'Obese';
+}
+
+console.log(checkBmi(60.5, 1.65));

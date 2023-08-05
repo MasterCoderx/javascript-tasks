@@ -237,3 +237,13 @@ function determineOddOrEven(value) {
 
 }
 console.log(determineOddOrEven(2));
+
+// Exercise 21
+
+function checkIfPlayingBanjo(name) {
+    if (name.startsWith('R') === true || name.startsWith('r') === true) {
+        return 'You are playing Banjo!';
+    }
+    return name + ' are you playing Banjo?';
+}
+console.log(checkIfPlayingBanjo('Sobert'));
